@@ -42,6 +42,13 @@ body{
     align-items: center;
 }
 
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+}
+
 .btn{
     background-color: var(--theme);
     border: none;
@@ -50,7 +57,7 @@ body{
     font-family: "Noto Serif Hentaigana", serif;
     font-weight: bold;
     font-size: 20px;
-    width: 150px;
+    width: 200px;
     cursor: pointer;
 }
 
