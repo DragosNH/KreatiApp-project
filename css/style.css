@@ -40,3 +40,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+/* --------- Footer --------- */
+
+.footer-items{
+    background-color: var(--theme);
+}
+
+.footer-img{
+    width: 40px;
+    padding: 25px;
+}
