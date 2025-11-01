@@ -1,0 +1,17 @@
+:root{
+    /* Light mode */
+    --theme: #e93754;
+    --txt-color: #333333;
+    --background: #f5f5f5;
+    --error: #d61e1e;
+
+    /* Dark mode */
+    --dark-text: #f5f5f5;
+    --dark-bk: #333333;
+    --dark-error: #ff6e6e;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--txt-color);
+}
