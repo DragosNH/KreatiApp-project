@@ -18,6 +18,7 @@ body{
     padding: 0;
 }
 
+/* --------- Header --------- */
 .header{
     background-color: var(--theme);
     width: 100vw;
@@ -26,4 +27,14 @@ body{
 .header-img{
     width: 250px;
     padding: 25px;
+}
+
+/* --------- Container --------- */
+
+.container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
