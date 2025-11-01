@@ -18,6 +18,7 @@ body{
     padding: 0;
     font-family: "Noto Serif Hentaigana", serif;
     /* font-family: "Dancing Script", cursive; */
+    overflow-x: hidden;
 }
 
 /* --------- Header --------- */
@@ -43,7 +44,6 @@ body{
 
 .btn{
     background-color: var(--theme);
-    color: var(--txt-color);
     border: none;
     border-radius: 8px;
     padding: 10px;
@@ -51,12 +51,26 @@ body{
     font-weight: bold;
     font-size: 20px;
     width: 150px;
+    cursor: pointer;
 }
 
 /* --------- Footer --------- */
 
 .footer-items{
     background-color: var(--theme);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+
+    & a{
+        color: var(--txt-color);
+        text-decoration: var(--txt-color);
+    }
+
+    & a:hover{
+            color: var(--background);
+        }
 }
 
 .footer-img{
