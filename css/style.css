@@ -1,4 +1,4 @@
-:root{
+:root {
     /* Light mode */
     --theme: #e93754;
     --txt-color: #333333;
@@ -11,7 +11,7 @@
     --dark-error: #ff6e6e;
 }
 
-body{
+body {
     background-color: var(--background);
     color: var(--txt-color);
     margin: 0;
@@ -22,19 +22,21 @@ body{
 }
 
 /* --------- Header --------- */
-.header{
+.header {
     background-color: var(--theme);
     width: 100vw;
 }
 
-.header-img{
+.header-img {
     width: 250px;
     padding: 25px;
 }
 
+
+
 /* --------- Container --------- */
 
-.container{
+.container {
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -42,14 +44,14 @@ body{
     align-items: center;
 }
 
-.btns{
+.btns {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 40vh;
 }
 
-.btn{
+.btn {
     background-color: var(--theme);
     border: none;
     border-radius: 8px;
@@ -61,26 +63,61 @@ body{
     cursor: pointer;
 }
 
+/* ------ Menu Button ------ */
+
+.burgerMenu {
+    position: relative;
+    display: inline-block;
+}
+
+.menuBtn {
+    width: 80px;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.menuItem {
+    position: absolute;
+    background-color: var(--theme);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Noto Serif Hentaigana", serif;
+    font-size: 14px;
+    width: 150px;
+    cursor: pointer;
+    z-index: 1;
+    margin: 10px;
+}
+
+.show {
+    display:flex;
+    flex-direction: column;
+
+}
+
 /* --------- Footer --------- */
 
-.footer-items{
+.footer-items {
     background-color: var(--theme);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 25px;
 
-    & a{
+    & a {
         color: var(--txt-color);
         text-decoration: var(--txt-color);
     }
 
-    & a:hover{
-            color: var(--background);
-        }
+    & a:hover {
+        color: var(--background);
+    }
 }
 
-.footer-img{
+.footer-img {
     width: 40px;
     padding: 25px;
 }
