@@ -62,10 +62,10 @@ body {
     border-radius: 8px;
     padding: 10px;
     font-family: "Noto Serif Hentaigana", serif;
-    font-weight: bold;
     font-size: 20px;
     width: 200px;
     cursor: pointer;
+    color: var(--dark-text);
 }
 
 /* ------ Menu Button ------ */
