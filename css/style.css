@@ -21,6 +21,11 @@ body {
     overflow-x: hidden;
 }
 
+.dark-mode{
+  background-color: var(--dark-bk);
+  color: var(--dark-text);
+}
+
 /* --------- Header --------- */
 .header {
     background-color: var(--theme);
