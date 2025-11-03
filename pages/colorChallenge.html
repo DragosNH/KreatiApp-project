@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KreatiApp</title>
+    <title>KreatiApp - Color Challenge</title>
     <script>
         if (localStorage.getItem('theme') === 'dark') {
             document.documentElement.classList.add('dark-mode');
@@ -28,20 +28,26 @@
     <div class="container">
         <!-- Burger Menu -->
         <div class="burgerMenu">
-            <img  class="menuBtn" src="../assets/menuBtn.png" alt="Menu Button">
+            <img class="menuBtn" src="../assets/menuBtn.png" alt="Menu Button">
             <div class="dropdown-content">
                 <button class="menuItem dkMode">Dark Mode</button>
                 <button class="menuItem">Change Language</button>
+                <a href="mainPage.html"><button class="menuItem">Return</button></a>
             </div>
         </div>
-        <h1>Chose your activity!</h1>
+        <h1>Challenges</h1>
+        <p class="txt">For "3 colors Challenge" you can take a
+            coloring page or one of your drawings
+            that you did not colour yet and use only
+            the three colours indicateted in the app,
+            the same goes for "5 coors challenge"</p>
         <!-- Buttons -->
         <div class="btns">
-            <a href="challenges.html"><button class="btn">Challenges</button></a>
-            <a href=""><button class="btn">Practice</button></a>
-            <a href=""><button class="btn">Color Wheel</button></a>
+            <a href=""><button class="btn">Color</button></a>
+            <a href=""><button class="btn">Prompt</button></a>
         </div>
     </div>
+
     <!-- Footer -->
     <footer class="footer-items">
         <a href="../index.html"><img class="footer-img" src="../assets/logo.png" alt="Small Logo"></a>

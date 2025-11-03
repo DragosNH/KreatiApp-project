@@ -112,6 +112,12 @@ body {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+/* --------- Text --------- */
+
+.txt{
+  max-width: 450px;
+}
+
 /* ------ When Dropdown is Active ------ */
 .show {
   display: flex;
