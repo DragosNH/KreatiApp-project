@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KreatiApp - Color Challenge</title>
+    <title>KreatiApp - 3 Colors Challenge</title>
     <script>
         if (localStorage.getItem('theme') === 'dark') {
             document.documentElement.classList.add('dark-mode');
@@ -19,12 +19,10 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header class="header">
         <a href="../index.html"><img class="header-img" src="../assets/header.png" alt="Header Logo"></a>
     </header>
-
-    <!-- Container -->
+    
     <div class="container">
         <!-- Burger Menu -->
         <div class="burgerMenu">
@@ -35,20 +33,14 @@
                 <a href="challenges.html"><button class="menuItem">Return</button></a>
             </div>
         </div>
-        <h1>Color Challenge</h1>
-        <p class="txt">For "3 colors" Challenge you can take a
-            coloring page or one of your drawings
-            that you did not colour yet and use only
-            the three colours indicateted in the app,
-            the same goes for "5 coors" challenge</p>
-        <!-- Buttons -->
-        <div class="btns">
-            <a href="threeColors.html"><button class="btn">3 Colors</button></a>
-            <a href=""><button class="btn">5 Colors</button></a>
+        <h1>3 Colors challenge</h1>
+        <div class="colors-container">
+            <div>Color 1</div>
+            <div>Color 2</div>
+            <div>Color 3</div>
         </div>
     </div>
-
-    <!-- Footer -->
+    
     <footer class="footer-items">
         <a href="../index.html"><img class="footer-img" src="../assets/logo.png" alt="Small Logo"></a>
         <a href="../pages/legalNotice.html">Legal Notice</a>
