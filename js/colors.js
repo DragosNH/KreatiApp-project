@@ -396,7 +396,7 @@ const colors = new Map([
     ["French fuchsia", "#fd3f92"],
 ]);
 
-
+const colorOne = document.querySelector(".color1");
 
 
 let keyNumber = Array.from(colors.keys())
