@@ -425,7 +425,7 @@ const keys = Array.from(colors.keys());
 // FUNCTION: generate one random name + its true hex
 function generateColorData() {
     const randomKey = keys[Math.floor(Math.random() * keys.length)];
-    const correctHex = colors.get(randomKey); // 🔥 THIS LINKS NAME → HEX
+    const correctHex = colors.get(randomKey); 
     return { name: randomKey, hex: correctHex };
 }
 
