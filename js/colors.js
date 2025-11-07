@@ -400,6 +400,8 @@ const colors = new Map([
 const colorOne = document.querySelector(".color1");
 const colorTwo = document.querySelector(".color2");
 const colorThree = document.querySelector(".color3");
+const colorFour = document.querySelector(".color4");
+const colorFive = document.querySelector(".color5");
 
 const colorNameOne = document.querySelector(".color-name-one");
 const colorHexOne = document.querySelector(".hex-one");
@@ -409,6 +411,12 @@ const colorHexTwo = document.querySelector(".hex-two");
 
 const colorNameThree = document.querySelector(".color-name-three");
 const colorHexThree = document.querySelector(".hex-three");
+
+const colorNameFour = document.querySelector(".color-name-four");
+const colorHexFour = document.querySelector(".hex-four");
+
+const colorNameFive = document.querySelector(".color-name-five");
+const colorHexFive = document.querySelector(".hex-five");
 
 // Convert map keys to array
 const keys = Array.from(colors.keys());
@@ -442,3 +450,14 @@ colorNameThree.innerText = c3.name;
 colorHexThree.innerText = c3.hex;
 colorThree.style.backgroundColor = c3.hex;
 
+// COLOR SET 4
+const c4 = generateColorData();
+colorNameFour.innerText = c4.name;
+colorHexFour.innerText = c4.hex;
+colorFour.style.backgroundColor = c4.hex;
+
+// COLOR SET 5
+const c5 = generateColorData();
+colorNameFive.innerText = c5.name;
+colorHexFive.innerText = c5.hex;
+colorFive.style.backgroundColor = c5.hex;
