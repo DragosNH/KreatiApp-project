@@ -9,3 +9,10 @@
     height: 250px;
     margin: 10px;
 }
+
+p{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+}

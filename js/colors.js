@@ -396,28 +396,49 @@ const colors = new Map([
     ["French fuchsia", "#fd3f92"],
 ]);
 
+// ----- DOM SELECTORS -----
 const colorOne = document.querySelector(".color1");
 const colorTwo = document.querySelector(".color2");
 const colorThree = document.querySelector(".color3");
 
-let keyNumber = Array.from(colors.keys())
-let randIndexForKey = Math.floor(Math.random() * keyNumber.length);
+const colorNameOne = document.querySelector(".color-name-one");
+const colorHexOne = document.querySelector(".hex-one");
 
-let valueNumber = Array.from(colors.values())
-let randIndexForValue = Math.floor(Math.random() * valueNumber.length);
+const colorNameTwo = document.querySelector(".color-name-two");
+const colorHexTwo = document.querySelector(".hex-two");
 
-let valueNumberTwo = Array.from(colors.values())
-let randIndexForValueTwo = Math.floor(Math.random() * valueNumber.length);
+const colorNameThree = document.querySelector(".color-name-three");
+const colorHexThree = document.querySelector(".hex-three");
 
-let valueNumberThree = Array.from(colors.values())
-let randIndexForValueThree = Math.floor(Math.random() * valueNumber.length);
+// Convert map keys to array
+const keys = Array.from(colors.keys());
 
 
-colorOne.style.backgroundColor = valueNumber[randIndexForValue]
-colorTwo.style.backgroundColor = valueNumberTwo[randIndexForValueTwo]
-colorThree.style.backgroundColor = valueNumberThree[randIndexForValueThree]
+// FUNCTION: generate one random name + its true hex
+function generateColorData() {
+    const randomKey = keys[Math.floor(Math.random() * keys.length)];
+    const correctHex = colors.get(randomKey); // 🔥 THIS LINKS NAME → HEX
+    return { name: randomKey, hex: correctHex };
+}
 
-console.log("Colors size is: " + colors.size);
-console.log(valueNumber[randIndexForValue]);
-console.log(keyNumber[randIndexForKey]);
+
+// COLOR SET 1
+const c1 = generateColorData();
+colorNameOne.innerText = c1.name;
+colorHexOne.innerText = c1.hex;
+colorOne.style.backgroundColor = c1.hex;
+
+
+// COLOR SET 2
+const c2 = generateColorData();
+colorNameTwo.innerText = c2.name;
+colorHexTwo.innerText = c2.hex;
+colorTwo.style.backgroundColor = c2.hex;
+
+
+// COLOR SET 3
+const c3 = generateColorData();
+colorNameThree.innerText = c3.name;
+colorHexThree.innerText = c3.hex;
+colorThree.style.backgroundColor = c3.hex;
 
