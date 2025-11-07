@@ -397,7 +397,8 @@ const colors = new Map([
 ]);
 
 const colorOne = document.querySelector(".color1");
-
+const colorTwo = document.querySelector(".color2");
+const colorThree = document.querySelector(".color3");
 
 let keyNumber = Array.from(colors.keys())
 let randIndexForKey = Math.floor(Math.random() * keyNumber.length);
@@ -405,6 +406,16 @@ let randIndexForKey = Math.floor(Math.random() * keyNumber.length);
 let valueNumber = Array.from(colors.values())
 let randIndexForValue = Math.floor(Math.random() * valueNumber.length);
 
+let valueNumberTwo = Array.from(colors.values())
+let randIndexForValueTwo = Math.floor(Math.random() * valueNumber.length);
+
+let valueNumberThree = Array.from(colors.values())
+let randIndexForValueThree = Math.floor(Math.random() * valueNumber.length);
+
+
+colorOne.style.backgroundColor = valueNumber[randIndexForValue]
+colorTwo.style.backgroundColor = valueNumberTwo[randIndexForValueTwo]
+colorThree.style.backgroundColor = valueNumberThree[randIndexForValueThree]
 
 console.log("Colors size is: " + colors.size);
 console.log(valueNumber[randIndexForValue]);
