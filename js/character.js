@@ -44,5 +44,10 @@ const charAction = [
     "Preapering (an attack or spell)",
 ]
 
-console.log("Classes so far: " + charClasses.length)
-console.log("Actions so far: " + charAction.length)
+let randRaceIndex = Math.floor(Math.random() * charRace.length);
+let randClassIndex = Math.floor(Math.random() * charClasses.length);
+let randActionIndex = Math.floor(Math.random() * charAction.length);
+
+console.log("Race race index: " + randRaceIndex);
+console.log("Class index: " + randClassIndex);
+console.log("Action index: " + randActionIndex);
