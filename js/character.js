@@ -12,3 +12,21 @@ const charRace = [
     "Hobbit",
     "Goblin",
 ]
+
+const charClasses = [
+    "Warrior",
+    "Mage",
+    "Wizard",
+    "Druid",
+    "Hunter",
+    "Paladin",
+    "Necromancer",
+    "Monk",
+    "Preist",
+    "Thief",
+    "Barbarian",
+    "Pirate",
+    "Ninja",
+]
+
+console.log("Classes so far: " + charClasses.length)
