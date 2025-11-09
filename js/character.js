@@ -7,7 +7,7 @@ const charRace = [
     "Dwarf",
     "Elf",
     "Orc",
-    "Hndead",
+    "Undead",
     "Hobbit",
     "Goblin",
 ]
@@ -26,6 +26,7 @@ const charClasses = [
     "Barbarian",
     "Pirate",
     "Ninja",
+    "Ranger",
 ]
 
 const charAction = [
@@ -48,6 +49,6 @@ let randRaceIndex = Math.floor(Math.random() * charRace.length);
 let randClassIndex = Math.floor(Math.random() * charClasses.length);
 let randActionIndex = Math.floor(Math.random() * charAction.length);
 
-console.log("Race race index: " + randRaceIndex);
-console.log("Class index: " + randClassIndex);
-console.log("Action index: " + randActionIndex);
+race.innerText = charRace[randRaceIndex];
+characterClass.innerText = charClasses[randClassIndex];
+action.innerText = charAction[randActionIndex];
