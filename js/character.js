@@ -29,4 +29,16 @@ const charClasses = [
     "Ninja",
 ]
 
+const charAction = [
+    "Sleeping",
+    "Walking",
+    "Running",
+    "Hiding",
+    "Training",
+    "Thinking",
+    "Laughing",
+    "Crying",
+]
+
 console.log("Classes so far: " + charClasses.length)
+console.log("Actions so far: " + charAction.length)
