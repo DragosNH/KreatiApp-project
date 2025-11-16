@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KreatiApp - Prompt</title>
+    <title>KreatiApp - Background</title>
     <script>
         if (localStorage.getItem('theme') === 'dark') {
             document.documentElement.classList.add('dark-mode');
@@ -17,7 +16,6 @@
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif+Hentaigana:wght@200..900&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
     <!-- Header -->
     <header class="header">
@@ -31,16 +29,14 @@
             <img class="menuBtn" src="../assets/menuBtn.png" alt="Menu Button">
             <div class="dropdown-content">
                 <button class="menuItem dkMode">Dark Mode</button>
-                <a href="challenges.html"><button class="menuItem">Return</button></a>
+                <a href="prompt.html"><button class="menuItem">Return</button></a>
             </div>
         </div>
-        <h1>Prompts</h1>
-        <!-- Buttons -->
-        <div class="btns">
-            <a href="character.html"><button class="btn">Character</button></a>
-            <a href="background.html"><button class="btn">Background</button></a>
-            <a href=""><button class="btn">Scene</button></a>
+        <h1>Background</h1>
+        <p class="txt">Draw a background on your own way while following the following prompt.</p>
+        <div class="background-prompt">
         </div>
+        <button class="refresh btn">Change prompt</button>
     </div>
 
     <!-- Footer -->
@@ -51,6 +47,6 @@
 
     <script src="../js/script.js"></script>
     <script src="../js/darkMode.js"></script>
+    <script src="../js/refresh.js"></script>
 </body>
-
 </html>
