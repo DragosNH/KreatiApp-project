@@ -12,8 +12,24 @@ const places = [
     "A prepared arena before the big event",
     "A peaceful river in the middle of a forest",
     "The entrance gate of a kingdom",
-]
+];
 
-let index = 0;
+const timeOfTheDay= [
+    "during morning",
+    "during afternoon",
+    "during night",
+    "during midnight",
+    "during twilight",
+    "during noon",
+    "during evening",
+    "at the dawn",
+    "at the sunrise",
+    "at the sunset",
+];
 
-console.log(places.length);
+let placesIndex = 0;
+placesIndex = Math.floor(Math.random() * places.length);
+let timeIndex = Math.floor(Math.random() * timeOfTheDay.length);
+
+place.innerText = places[placesIndex];
+time.innerText = timeOfTheDay[timeIndex];
