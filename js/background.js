@@ -8,7 +8,12 @@ const places = [
     "The trone room of a powerful king",
     "A small peaceful village",
     "A huge storm on a cursed forest",
-    
+    "A coasy library with a fire burning inside a chimney",
+    "A prepared arena before the big event",
+    "A peaceful river in the middle of a forest",
+    "The entrance gate of a kingdom",
 ]
+
+let index = 0;
 
 console.log(places.length);
