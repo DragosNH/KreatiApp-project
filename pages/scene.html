@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KreatiApp</title>
+    <title>KreatiApp - Scene</title>
     <script>
         if (localStorage.getItem('theme') === 'dark') {
             document.documentElement.classList.add('dark-mode');
@@ -13,11 +12,11 @@
 
     <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/background.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif+Hentaigana:wght@200..900&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
     <!-- Header -->
     <header class="header">
@@ -28,19 +27,24 @@
     <div class="container">
         <!-- Burger Menu -->
         <div class="burgerMenu">
-            <img  class="menuBtn" src="../assets/menuBtn.png" alt="Menu Button">
+            <img class="menuBtn" src="../assets/menuBtn.png" alt="Menu Button">
             <div class="dropdown-content">
                 <button class="menuItem dkMode">Dark Mode</button>
+                <a href="prompt.html"><button class="menuItem">Return</button></a>
             </div>
         </div>
-        <h1>Chose your activity!</h1>
-        <!-- Buttons -->
-        <div class="btns">
-            <a href="challenges.html"><button class="btn">Challenges</button></a>
-            <a href=""><button class="btn">Practice</button></a>
-            <a href=""><button class="btn">Color Wheel</button></a>
+        <h1>Scene</h1>
+        <p class="txt">Draw a scene on your own way while following the following prompt.</p>
+        <div class="character-prompt">
+            <p><strong>Race:</strong> <span class="race"></span></p>
+            <p><strong>Class:</strong> <span class="class"></span></p>
+            <p><strong>Action/Pose:</strong> <span class="action"></span></p>
+            <p><strong>Plce:</strong> <span class="place"></p>
         </div>
+        
+        <button class="refresh btn">Change prompt</button>
     </div>
+
     <!-- Footer -->
     <footer class="footer-items">
         <a href="../index.html"><img class="footer-img" src="../assets/logo.png" alt="Small Logo"></a>
@@ -49,6 +53,8 @@
 
     <script src="../js/script.js"></script>
     <script src="../js/darkMode.js"></script>
+    <script src="../js/refresh.js"></script>
+    <script src="../js/background.js"></script>
+    <script src="../js/character.js"></script>
 </body>
-
 </html>
