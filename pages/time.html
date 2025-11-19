@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KreatiApp - Challenges</title>
+    <title>KreatiApp - Timer</title>
     <script>
         if (localStorage.getItem('theme') === 'dark') {
             document.documentElement.classList.add('dark-mode');
@@ -17,7 +16,6 @@
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif+Hentaigana:wght@200..900&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
     <!-- Header -->
     <header class="header">
@@ -31,16 +29,11 @@
             <img class="menuBtn" src="../assets/menuBtn.png" alt="Menu Button">
             <div class="dropdown-content">
                 <button class="menuItem dkMode">Dark Mode</button>
-                <a href="mainPage.html"><button class="menuItem">Return</button></a>
+                <a href="challenges.html"><button class="menuItem">Return</button></a>
             </div>
         </div>
-        <h1>Challenges</h1>
-        <!-- Buttons -->
-        <div class="btns">
-            <a href="colorChallenge.html"><button class="btn">Color</button></a>
-            <a href="prompt.html"><button class="btn">Prompt</button></a>
-            <a href="time.html"><button class="btn">Time</button></a>
-        </div>
+        <h1>Time challenge</h1>
+
     </div>
 
     <!-- Footer -->
@@ -52,5 +45,4 @@
     <script src="../js/script.js"></script>
     <script src="../js/darkMode.js"></script>
 </body>
-
 </html>
