@@ -1,6 +1,13 @@
-function countdown( elementName, minutes, seconds )
+const tenMin = document.querySelector(".tenMin")
+
+tenMin.addEventListener("click", function(){
+    tenMinCountdown( ".ten-countdown", 10, 0 )
+})
+
+
+function tenMinCountdown( e, minutes, seconds )
 {
-    var element, endTime, hours, mins, msLeft, time;
+    let element, endTime, hours, mins, msLeft, time;
 
     function twoDigits( n )
     {
@@ -11,7 +18,7 @@ function countdown( elementName, minutes, seconds )
     {
         msLeft = endTime - (+new Date);
         if ( msLeft < 1000 ) {
-            element.innerHTML = "Time is up!";
+            element.innerHTML = "Time's up!";
         } else {
             time = new Date( msLeft );
             hours = time.getUTCHours();
@@ -21,9 +28,7 @@ function countdown( elementName, minutes, seconds )
         }
     }
 
-    element = document.querySelector( elementName );
+    element = document.querySelector( e );
     endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
     updateTimer();
 }
-
-countdown( ".ten-countdown", 10, 0 );
