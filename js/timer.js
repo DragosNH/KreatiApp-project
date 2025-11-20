@@ -2,9 +2,11 @@ const oneHour = document.querySelector(".oneHour");
 const thirtyMin = document.querySelector(".thirtyMin");
 const tenMin = document.querySelector(".tenMin");
 
-oneHour.addEventListener("click", function(){
-    tenMinCountdown( ".one-countdown", 60, 0 )
-})
+if(oneHour){
+    oneHour.addEventListener("click", function(){
+        tenMinCountdown( ".one-countdown", 60, 0 )
+    })
+}
 
 thirtyMin.addEventListener("click", function(){
     tenMinCountdown( ".thirty-countdown", 30, 0 )
